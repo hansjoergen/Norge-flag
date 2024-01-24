@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norges Flagg</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(118, 102, 175);
+        }
+
+        .grid-container {
+            display: grid;
+            height: 540px;
+            gap: 35px;
+            background-color: white;
+            grid-template-columns: 250px 70px 420px;
+            grid-template-rows: 200px 70px 200px;
+        }
+
+        .red {
+            background-color: rgb(226, 0, 0);
+        }
+
+        .blue {
+            background-color: rgb(16, 16, 139);
+        }
+
+        .item2 {
+            grid-row: 1 / 4;
+            grid-column: 2 / 3;
+        }
+
+        .item4 {
+            grid-row: 2 / 3;
+            grid-column: 1 / 4;
+        }
+
+        .item6 {
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1 red"></div>
+        <div class="item2 blue"></div>
+        <div class="item3 red"></div>
+        <div class="item4 blue"></div>
+        <div class="item5 red"></div>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="item6 red"></a>
+    </div>
+</body>
+</html>
